@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "2571539633",
+    "project_id": "for-u-backend",
+    "storage_bucket": "for-u-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2571539633:android:f374c110bbd4c927b07e90",
+        "android_client_info": {
+          "package_name": "com.example.a4u"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOs57dNwDLkTE8dOwOWqrnqynbLdFmlb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
