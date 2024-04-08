@@ -9,4 +9,6 @@
     <color name="grey">#D3D3D3</color>
     <color name="circularBg">#673AB7</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="headerBackground">#8B51F1</color>
+    <color name="toolbarBackground">#CBBBE6</color>
 </resources>
