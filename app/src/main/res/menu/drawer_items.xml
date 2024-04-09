@@ -6,13 +6,23 @@
         android:icon="@drawable/round_dashboard"/>
 
     <item
-        android:id="@+id/itRecords"
-        android:icon="@drawable/records"
-        android:title="Records"/>
+        android:id="@+id/itHelpline"
+        android:icon="@drawable/contact_emergency"
+        android:title="Helpline"/>
 
     <item
-        android:id="@+id/itCategories"
-        android:icon="@drawable/categories"
-        android:title="Categories"/>
+        android:id="@+id/itAreaAlerts"
+        android:icon="@drawable/baseline_crisis_alert_24"
+        android:title="Area Alerts"/>
+
+    <item
+        android:id="@+id/itLiveLocation"
+        android:icon="@drawable/live_location"
+        android:title="Live Location Sharing"/>
+
+    <item
+        android:id="@+id/itContacts"
+        android:icon="@drawable/baseline_connect_without_contact_24"
+        android:title="Emergency Contacts"/>
 
 </menu>

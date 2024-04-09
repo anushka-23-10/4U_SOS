@@ -31,7 +31,7 @@ class PhoneAuthentication : AppCompatActivity() {
     private lateinit var combinedPhoneNumber: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+//        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         binding = ActivityPhoneAuthenticationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -46,7 +46,7 @@ class PhoneAuthentication : AppCompatActivity() {
         val timeOut = 60L
 
         nextButton.setOnClickListener {
-            goToNextActivity()
+//            goToNextActivity()
             var enteredOTP = otp.text.toString()
             var phoneAuthCredential = PhoneAuthProvider.getCredential(verificationCode ,enteredOTP)
             signIn(phoneAuthCredential)
@@ -126,7 +126,7 @@ class PhoneAuthentication : AppCompatActivity() {
 
 
     private fun onClick() {
-        SafetyNet.getClient(this).verifyWithRecaptcha("6Lc39JopAAAAAGblwohBH0XFrGmnebEsZzhmDGMR")
+        SafetyNet.getClient(this).verifyWithRecaptcha("6LeuxbQpAAAAAOiDjpWYXLhA6vih6E5FsulDqlfJ")
             .addOnSuccessListener(ContextCompat.getMainExecutor(this), OnSuccessListener { response ->
                 // Indicates communication with reCAPTCHA service was
                 // successful.
