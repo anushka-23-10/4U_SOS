@@ -1,28 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/itDashboard"
-        android:title="Dashboard"
-        android:icon="@drawable/round_dashboard"/>
 
-    <item
-        android:id="@+id/itHelpline"
-        android:icon="@drawable/contact_emergency"
-        android:title="Helpline"/>
+    <group android:checkableBehavior="single">
 
-    <item
-        android:id="@+id/itAreaAlerts"
-        android:icon="@drawable/baseline_crisis_alert_24"
-        android:title="Area Alerts"/>
+        <item
+            android:id="@+id/itDashboard"
+            android:icon="@drawable/round_dashboard"
+            android:title="Dashboard" />
 
-    <item
-        android:id="@+id/itLiveLocation"
-        android:icon="@drawable/live_location"
-        android:title="Live Location Sharing"/>
+        <item
+            android:id="@+id/itHelpline"
+            android:icon="@drawable/contact_emergency"
+            android:title="Helpline" />
 
-    <item
-        android:id="@+id/itContacts"
-        android:icon="@drawable/baseline_connect_without_contact_24"
-        android:title="Emergency Contacts"/>
+        <item
+            android:id="@+id/itAreaAlerts"
+            android:icon="@drawable/baseline_crisis_alert_24"
+            android:title="Area Alerts" />
 
+        <item
+            android:id="@+id/itLiveLocation"
+            android:icon="@drawable/live_location"
+            android:title="Live Location Sharing" />
+
+        <item
+            android:id="@+id/itContacts"
+            android:icon="@drawable/baseline_connect_without_contact_24"
+            android:title="Emergency Contacts" />
+
+        <item
+            android:id="@+id/itAbout"
+            android:icon="@drawable/about"
+            android:title="About App" />
+
+        <item
+            android:id="@+id/itLogout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
 </menu>

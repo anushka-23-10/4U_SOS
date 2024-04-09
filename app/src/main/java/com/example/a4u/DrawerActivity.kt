@@ -6,6 +6,7 @@ import android.view.MenuItem
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.example.a4u.databinding.ActivityDrawerBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -27,23 +28,45 @@ class DrawerActivity : AppCompatActivity() {
             drawerLayout.open()
         }
 
+
         navigationView.setNavigationItemSelectedListener { item: MenuItem ->
             var itemId = item.itemId
+            item.isChecked = true
 
             when (itemId) {
                 R.id.itContacts -> {
-                    Toast.makeText(this, "Contacts", Toast.LENGTH_SHORT).show()
+                    replaceFragment(EmergencyConatctsFragment())
                 }
                 R.id.itDashboard -> {
-                    Toast.makeText(this, "Dashboard", Toast.LENGTH_SHORT).show()
+                    TODO("How to navigate back to dashboard")
+//                    replaceFragment()
+                }
+                R.id.itHelpline -> {
+                    replaceFragment(HelplinesFragment())
                 }
                 R.id.itLiveLocation -> {
-                    Toast.makeText(this, "Live Location", Toast.LENGTH_SHORT).show()
+                    replaceFragment(LiveLocationFragment())
+                }
+                R.id.itAbout -> {
+                    replaceFragment(AboutAppFragment())
+                }
+                R.id.itAreaAlerts -> {
+                    replaceFragment(AreaAlertsFragment())
+                }
+                R.id.itLogout -> {
+                    TODO("implement logout facility")
                 }
             }
 
             drawerLayout.close()
             true
         }
+    }
+
+    private fun replaceFragment(fragment : Fragment){
+        var fragmentManager = supportFragmentManager
+        var fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.framelayout, fragment)
+        fragmentTransaction.commit()
     }
 }
