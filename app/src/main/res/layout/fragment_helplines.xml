@@ -5,10 +5,45 @@
     android:layout_height="match_parent"
     tools:context=".HelplinesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distress"
+            android:id="@+id/btnDistress"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abuse"
+            android:id="@+id/btnAbuse"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police"
+            android:id="@+id/btnPolice"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helpline"
+            android:id="@+id/btnHelpline"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambulance"
+            android:id="@+id/btnAmbulance"
+            />
+    </LinearLayout>
+
+
 
 </FrameLayout>
